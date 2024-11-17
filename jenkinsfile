@@ -33,7 +33,8 @@ pipeline {
         stage('Despliegue') {
             steps {
                 echo 'Desplegando en el entorno de pruebas...'
-                sh 'scp target/*.jar user@server:/ruta/despliegue'
+                
+                sh 'scp target/*.jar user@172.19.0.2:/ruta/despliegue'
             }
         }
     }
