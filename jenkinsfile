@@ -29,7 +29,7 @@ pipeline {
                 echo 'Enviando notificaciones...'
                 mail to: 'jandresrodriguez4@poligran.edu.co',
                      subject: "Notificación: Resultado del pipeline",
-                     body: "El pipeline ha finalizado. Verifica los resultados en Jenkins."
+                     body: "El pipeline ha finalizado. El test realizado por el subgrupo 20 ha sido un exito."
             }
         }
         stage('Despliegue') {
