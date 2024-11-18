@@ -27,11 +27,16 @@ pipeline {
         stage('Notificaciones') {
             steps {
                 echo 'Enviando notificaciones...'
+                mail to: 'jandresrodriguez4@poligran.edu.co',
+                     subject: "Notificación: Resultado del pipeline",
+                     body: "El pipeline ha finalizado. Verifica los resultados en Jenkins."
             }
         }
         stage('Despliegue') {
             steps {
                 echo 'Desplegando en el entorno de pruebas...'
+
+                
 
             }
         }
